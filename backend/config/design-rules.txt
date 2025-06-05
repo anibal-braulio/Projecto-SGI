@@ -1,0 +1,7 @@
+cor amarela --> f6de76
+cor amarela dourada --> f2ce42
+cor laranja --> db9c10
+cor amarela --> f8d714
+
+cor preta --> 222222
+cor branca --> ffffff

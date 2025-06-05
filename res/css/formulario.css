@@ -1,0 +1,282 @@
+@import 'global.css';
+body{
+	height: 100%;
+	background-image: url('../img/fundo@1.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+}
+header{
+	position: relative;
+	top: 0px;
+	left: 0px;
+	padding: 10px;
+	text-align: center;
+	width: 100%;
+	font-weight: lighter;
+}
+h1,h2{
+	padding-bottom: 5px;
+}
+h2{
+	color: #35ee35;
+}
+.container{
+	position: relative;
+	width: 100%;
+	height: 500px;
+}
+form{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	border-radius: 15px;
+	box-shadow: 0px 0px 15px rgba(200,200,200,0.8);
+	padding: 10px;
+}
+.form-login{
+	width: 30%;
+}
+
+.container fieldset{
+	padding: 5px;
+	border: none;
+}
+.form-login label{
+	display: block;
+	margin: 0 auto;
+	width: 80%;
+	font-size: 20px;
+	padding: 5px 0;
+}
+.form-login input{
+	margin: 0 auto 10px auto;
+	width: 80%;
+	display: block;
+	padding: 10px 5px; 
+	font-size: 20px;
+	border-radius: 10px;
+	border: 1px solid #313131;
+	outline: none;
+	border: 1px solid green;
+}
+legend{
+	padding-top: 20px;
+	text-align: center;
+	font-size: 25px;
+}
+.form-login .forgot{
+	display: block;
+	margin: 0 auto;
+	width: 80%;
+	text-align: right;
+	padding-bottom: 10px;
+}
+.form-login p{
+	margin: 5px auto;
+	width: 80%;
+	text-align: right;
+}
+.form-login a{
+	color: rgb(100,100,240);
+}
+input:focus{
+	transition: .5s ease-in;
+	border: 1px solid #35ee35;
+	box-shadow: 1px 1px 9px rgba(53,283,53,0.7);
+}
+select{
+	padding: 5px 3px;
+	font-size: 14px;
+}
+/*secao de cadastro*/
+.form-cadastro{
+	width: 50%;
+}
+
+.form-cadastro .box label{
+	display: inline-block;
+	width: 150px; 
+	text-align: right;
+}
+.form-cadastro .box input{
+	display: inline-block;
+	padding: 10px; 
+	margin: 5px auto;
+	width: 60%;
+	font-size: 15px;
+	border-radius: 10px;
+	border: 1px solid #313131;
+	outline: none;
+	border: 1px solid green;
+}
+.box-1 .lbl{
+	width: 480px;
+}
+/*
+.dados-3{
+	display: block;
+	margin: 10px auto;
+	width: 88%;
+}*/
+.tipo{
+	margin-left: 10px;
+	display: inline-block;
+}
+.tipo select{
+	display: block;
+}
+.genero{
+	text-align: center;
+	display: inline-block;
+}
+.genero label{
+	display: inline-block;
+}
+.genero input{
+	margin: 0 auto;
+}
+#endereco{
+	width: 55%;
+}
+#codigo{
+	width: 35%;
+}
+.form-footer{
+	position: relative;
+	height: 48px;
+	padding: 5px;
+}
+.form-footer p{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	display: flex;
+	align-content: center;
+	align-items: center;
+	justify-content: space-between;
+}
+.form-footer a{
+	color: white;
+	display: inline-block;
+	padding: 5px;
+}
+.form-footer .a-ativo{
+	color: #35ee35;
+	font-weight: bold;
+}
+.btn{
+	position: absolute;
+	right: 0px;
+	display: block;
+	width: 150px;
+	padding: 10px;
+	text-align: center;
+	background-color: #31ad31;
+	color: white;
+	cursor: pointer;
+	border: none;
+	border-radius: 15px;
+	font-size: 14px;
+	font-weight: bold;
+}
+/*
+#nomeUser{
+	width: 65%; 
+}
+#email{
+	width: 75%;
+}
+#senha{
+	width: 60%;
+}*/
+#telefone{
+	width: 45%;
+}
+#escolaridade{
+	width: 50%;
+}
+
+.box-dados-user{
+	width: 300px;
+	margin-left: 10px;
+	justify-content: space-between;
+}
+.box-dados-user label{
+	padding-top: 10px;
+}
+.box-dados-user input{
+	display: block;
+	margin-bottom: 5px;
+	padding: 10px 5px;
+	font-size: 15px;
+	border-radius: 10px;
+	outline: none;
+	border: 1px solid green;
+}
+#lbl-foto{
+	background: rgba(0,0,0,0.5);
+	display: inline-block;
+	width: 100px;
+	padding: 10px;
+	height: 100px;
+	border-radius: 15px;
+	border: 3px dashed white;
+	cursor: pointer;
+}
+#lbl-obs{
+	display: block;
+	width: 80%;
+	margin: 10px auto 2px auto;
+	padding: 10px;
+	text-align: center;
+	font-weight: bolder;
+	font-size: 16px;
+	color: #35ee35;
+}
+textarea{
+	display: block;
+	margin: 0 auto;
+	width: 300px;
+	height: 150px;
+	padding: 10px 5px;
+	border: none;
+	outline: none;
+}
+textarea{
+	outline: 1px solid green;
+}
+#foto{
+	display: none;
+}
+
+footer{
+	width: 100%;
+	padding: 5px;
+	text-align: center;
+	color: #35ee35;
+	justify-content: space-between;
+}
+footer li{
+	margin: 0px auto;
+}
+footer ul a{
+	color: #35ee35;
+	display: block;
+	width: 150px;
+	text-align: center;
+	padding: 5px;
+	text-decoration: underline;
+	font-weight: lighter;
+	font-size: 14px;
+}
+/*classes de visibilidade*/
+.oculto{
+	display: none;
+}
+.mostra{
+	display: block;
+}

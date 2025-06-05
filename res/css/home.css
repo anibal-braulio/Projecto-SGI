@@ -1,0 +1,33 @@
+@import 'global.css';
+@import 'global-header.css';
+.ranking{
+	padding: 10px 0px 10px 0px;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-content: center;
+	align-items: center;
+}
+.ranking article{
+	width: 250px;
+	height: 100px;
+	padding: 10px;
+	border-radius: 5px !important;
+	border: 1px solid #4caf50;
+}
+.ranking article:last-child(){
+	margin-right: 0px;
+}
+.ranking h2{
+	padding: 3px 0px;
+	font-style: lighter;
+	text-align: center;
+}
+.ranking p{
+	padding: 3px 0px;
+	text-align: center;
+}
+.form-busca-ctn{
+	height: 100%;
+	background: blue;
+}

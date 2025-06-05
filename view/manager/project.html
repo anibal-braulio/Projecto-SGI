@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+	<meta name="description" content="bem vindo a interface principal de um gestor de projetos no sistema">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Meus Projectos</title>
+	<link rel="stylesheet" type="text/css" href="../../res/css/projects.css">
+</head>
+<body>
+	<header class="flex-column center just-b header">
+		<section class="hd-content flex-row center just-b">
+			<div class="header-title">
+				<h3>Pagina Inicial</h3>
+				<?php echo "<span>".date('d-m-Y')."<span>"?>
+			</div>
+			<form class="form-busca flex-row center" id="form" action="dados-busca.html" method="get">
+				 <input type="search" name="search" id="search" placeholder="o que quer aprender?">
+				 <button class="center" name="buscar" id="buscar" type="submit">
+				 <img loading="lazy" src="../../res/img/icones/lupa.png"></button>
+			 </form>
+			 <nav>
+				 <ul class="item-menu flex-row">
+					 <li><a href="">
+						 <figure>
+							 <img loading="lazy" src="../../res/img/icones/chat@50.png">
+						 </figure>
+					 </a></li>
+					 <li><a href="">
+						 <figure>
+							 <img loading="lazy" src="../../res/img/icones/notify.png">
+						 </figure>
+					 </a></li>
+					 <li><a href="">
+						 <figure>
+							 <img loading="lazy" src="../../res/img/icones/config.png">
+						 </figure>
+					 </a></li>
+				 </ul>
+			 </nav>
+		 </section>
+		 <section class="hd-sub flex-row center">
+			 <nav>
+			<ul class=" hd-sub-menu flex-row center just-b">
+				<li><a href="home.html">
+					Pagina inicial
+				</a></li>
+				<li><a href="#">
+					Dashboard
+				</a></li>
+				<li><a href="meus-cursos.html">
+					Cursos
+				</a></li>
+				<li><a href="#">
+					Chat
+				</a></li>
+				<li><a href="#">
+					Biblioteca
+				</a></li>
+				<li><a href="#">
+					Avaliação
+				</a></li>
+				<li><a href="#">
+					Status
+				</a></li>
+			</ul>
+		</nav>
+		</section>
+	</header>
+	<section class="container flex-row center">
+		<section class="aside">
+			<nav>
+				<ul class="menu-hd flex-column center">
+					<li><a href="meus.html">Criados</a></li>
+					<li><a href="inscritos.html">Inscritos</a></li>
+					<li><a href="assitidos.html">Assitidos</a></li>
+					<li><a href="guardados.html">Guardados</a></li>
+				</ul>
+			</nav>
+		</section>
+		<main class="content flex-column just-b center">
+			<section class="sup-content flex-row just-b">
+				<div>
+					<h1>Nome do projecto</h1>
+					<p>data modificação</p>	
+				</div>
+				<div>
+					<p>data criação | data termino</p>
+					<p>categoria</p>
+				</div>
+			</section>
+			<section class="mid-content flex-column">
+				<h3>Descricação do projecto</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<h2>Membros do projecto</h2>
+				<ul>
+					<li><a href="chatGestor.html">
+						<figure><img loading="lazy" src="../../res/img/icones/user.png">
+							<figcaption>usuario</figcaption>
+						</figure>
+					</a></li>
+				</ul>
+			</section>
+		</main>
+	</section>
+</body>
+</html>

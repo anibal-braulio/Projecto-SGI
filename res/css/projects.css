@@ -1,0 +1,122 @@
+@import "global.css";
+/*@import "global-header";*/
+header{
+	position: relative;
+	color: white;
+	width: 100%;
+	padding: 10px 5px;
+	justify-content: space-between;
+	background: #f6df76e4;
+}
+.container{
+	justify-content: space-between;
+	width: 100%;
+	height: 100vh;
+}
+.aside{
+	height: 100%;
+	width: 160px;
+	background-color: #f6de76;
+	color: #222222;
+	padding: 10px 10px 0px 10px;
+}
+main{
+	height: 100%;
+	width: 90%;
+}
+.hd-content{
+	width: 100%;
+	justify-content: space-between;
+}
+.hd-sub{
+	transition: 0.7s ease;
+	margin-top: 20px;
+}
+.hd-sub-menu{
+	 width: 100%;
+}
+.hd-sub-menu a{
+	display: block;
+	border-right: 1px solid #222222;	
+	margin-left: 5px;
+	padding: 5px 10px;
+	font-size: 20px;
+}
+.hd-sub-menu a:hover{
+	background-color: rgba(230, 186, 8, 0.461);
+	margin: 0px;
+	/* color: white; */
+	border-radius: 5px;
+	transition: 0.9s ease-out;
+}
+.menu-hd{
+	position: fixed;
+	top: 28%;
+	color: white;
+	padding: 0px;
+}
+.menu-hd li{
+	border-top: 1px solid white;
+}
+.menu-hd a{
+	display: block;
+	padding: 10px;
+	font-size: 16px;
+	text-align: center;
+	color: white;
+	font-weight: 500px;
+}
+.form-busca{
+	padding: 5px;
+	background-color: white;
+	border-radius: 15px;
+	box-shadow: 0px 0px 10px #efcc3e;
+}
+.form-busca input{
+	padding: 0px 5px;
+	width: 300px;
+	border: none;
+	border-radius: 15px 0px 0px 15px;
+	font-size: 15px;
+}
+.form-busca button{
+	border: none;
+	background-color: transparent;
+}
+.form-busca img{
+	padding: 2px;
+	border-radius: 50%;	
+	width: 32px;
+	height: 32px;
+}
+.sup-content{margin: 0px !important;
+	justify-content: space-between;
+	width: 100%;
+	background-color: #222222;
+	padding: 10px 0px 10px 10px;
+	color: white;
+}
+.content section{
+	margin: 5px 0px;
+	padding: 5px 10px;
+}
+
+.item-menu{
+	height: 100%;
+}
+.item-menu li{
+	display: flex;
+	align-items: center;
+	align-content: center;
+	border: none;
+	padding: 0px 5px;
+}
+.item-menu figure{
+	width: 25px;
+	height: 25px;
+}
+.item-menu figure img{
+	border: none;
+	width: 100%;
+	height: 100%;
+}

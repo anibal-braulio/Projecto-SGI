@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="sistema de gestão de projecto cientifcos da faculdade de serviços socias de Angola">
+	<title>Login | FSS</title>
+	<link rel="stylesheet" type="text/css" href="../res/css/formulario.css">
+	<script type="text/javascript" src="../res/js/jquery.js" defer></script>
+	<script type="text/javascript" src="../res/js/form.js" defer></script>
+</head>
+<body class="flex-column center">
+	<header>
+		<h1>Sistema Integrado de Gestão de projecto cientifico</h1>
+		<h2>Faculdade de Serviços Sociais</h2>
+	</header>
+	<section class="container ctn-login box-login">
+		<form id="formLogin" class="form-login flex-column">
+			<fieldset><legend>Inicie sua Sessão</legend>
+				<label for="emailLogin">seu email ou numero:</label>
+				<input type="text" name="emailLogin" id="emailLogin" placeholder="exemple@gmail.com" min-length="3">
+				<label for="senhaLogin">sua senha:</label>
+				<input type="password" name="senhaLogin" id="senhaLogin" placeholder="senha1234" maxlength="25">
+				<a class="forgot" href="forgot-pass" id="forgot-pass">esqueceu a senha</a>
+				<input type="submit" name="entrar" id="entrar" value="entrar">
+				<p>Ainda não tenho uma conta, <a class="call-cadastro" href="#ctn-cadastro">criar conta?</a></p>
+			</fieldset>
+		</form>
+	</section>
+	<section class="container ctn-cadastro oculto">
+		<form class="form-cadastro">
+			<fieldset class="box-cadastro-um">
+			<div class="box box-1">
+				<legend>Cadastre-se no sistema</legend>
+				<label for="nome">Nome Completo:</label>
+				 <input type="text" name="nome" id="nome" placeholder="nome sobrenome" required>
+				<br>
+				<label for="nome">Endereço:</label>
+				<input type="text" name="nomeUser" id="endereco" placeholder="onde você vive" required>
+				<br>
+				<label class="lbl" for="telefone">Telefone:</label>
+				<input type="tel" name="telefone" id="telefone" placeholder="9XX XXX XXX" required>
+			</div>
+			<div class="dados">
+				<label class="dataNasc">Data de Nascimento: <select id="dia" name="dia">
+						<option value="dia">dia</option>
+						<option value="01"  selected>01</option>
+						<option value="02" >02</option>
+						<option value="03" >03</option>
+						<option value="04" >04</option>
+						<option value="05" >05</option>
+						<option value="06" >06</option>
+						<option value="07" >07</option>
+						<option value="08" >08</option>
+						<option value="09" >09</option>
+						<option value="10" >10</option>
+						<option value="12" >12</option>
+						<option value="13" >13</option>
+						<option value="14" >14</option>
+						<option value="15" >15</option>
+						<option value="16" >16</option>
+						<option value="17" >17</option>
+						<option value="18" >18</option>
+						<option value="19" >19</option>
+						<option value="20" >20</option>
+					</select>
+					<select name="mes" id="mes">
+						<option value="mês" selected>mês</option>
+						<option value="janeiro">Janeiro</option>
+						<option value="Fevereiro">Fevereiro</option>
+						<option value="Março" >Março</option>
+						<option value="Abril" >Abril</option>
+					</select>
+					<select name="ano" id="ano">
+						<option value="ano">ano</option>
+						<option value="2000" >2000</option>
+						<option value="2001" >2001</option>
+						<option value="2002" >2002</option>
+						<option value="2003" >2003</option>
+					</select></label>
+				
+					<label class="genero">Genero
+					<br>
+					<label>M <input type="radio" name="genero" value="M" ></label>
+					<label>F <input type="radio" name="genero" value="F" ></label>
+					</label>
+					<br>
+					<label for="tipoConta" class="tipo">Tipo de Conta: <select name="tipoConta" id="tipoConta">
+						<option value="Professor">Professor</option>
+					</select></label>
+					<label>Faculadade:
+						<select name="faculdade" id="faculdade">
+							<option value="Instituição" selected>Instituição</option>
+							<option value="Artes">Faculde de artes</option>
+							<option value="Gestao">Faculdade de Gestão</option>
+							<option value="Artes">Faculde de artes</option>
+							<option value="Gestao">Faculdade de Gestão</option>
+						</select>
+					</label>
+				</div>
+
+				<div class="box dados dados-3">
+					<label>Escolaridade:</label>
+					<input type="text" id="escolaridade" name="escolaridade"><br>
+					<div class="form-footer flex-row">
+						<p>< <a href="" class="a-ativo">1 </a> / 2 ></p>
+						<button class="btn btnNext">proxima -></button>
+					</div>
+				</div>
+			</fieldset>
+			<fieldset class="box-user oculto">
+				<div class="flex-row">
+					<label for="foto" id="lbl-foto">foto</label>
+					<input type="file" name="foto" id="foto">
+					<div class="box-dados-user flex-column">
+						<label for="nomeUser">Nome de Usuario</label>
+						<input type="text" name="nomeUser" id="nomeUser" placeholder="crie uma nome de Usuario">
+
+						<label for="senha">Sua senha</label>
+						<input type="password" name="senhaUser" id="senhaUser" placeholder="crie uma senha">
+
+						<label for="email">Seu email</label>
+						<input type="email" name="emailUser" id="emailUser" placeholder="informe seu email">	
+					</div>
+				</div>
+				
+				<label for="obs" id="lbl-obs">Observação</label>
+				<textarea name="obs" id="obs" placeholder="doença, situação familiar etc..."></textarea>
+				<div class="form-footer flex-row">
+					<p>< <a href="" class="a-ativo">2 </a> / 2 ></p>
+					<button type="submit" name="btnCad" class="btn">cadastrar</button>
+				</div>
+			</fieldset>
+		</form>
+	</section>
+	</section>
+	<footer>
+		<p>Todos os diretos reservados ao Autor e a <a href="FSS">Faculadade de Serviços Sociais</a></p>
+		<ul class="flex-row center">
+			<li><a href="report">reportar erro</a></li>
+			<li><a href="contactenos">contacte-nos</a></li>
+			<li><a href="FSS">quem somos</a></li>
+			<li><a href="sobre-sig">sobre a sistema</a></li>
+		</ul>
+	</footer>
+		<div id="modal-err" class="modal modal-err">
+			<div class="modal-content">
+				<span class="close">&times;</span>
+				<h2>Erro no formulario</h2>
+				<p id="erro">aguardando um texto informativo...</p>
+			</div>
+  	  	</div>
+		<div class="modal modal-inq">
+			<div id="" class="modal-ctt-inq">
+				<h2>Que tipo de usuario será: </h2>
+				<input type="radio" name="tipoUser" id="estudante" value="estudante">
+				<label for="estudante">Um Estudante </label><br>
+				<input type="radio" name="tipoUser" id="gestor" value="gestor">
+				<label for="gestor">Um Gestor de Projectos </label>
+				<button name="enviar" id="enviar">OK</button>
+			</div>
+		</div>
+		<dialog class="dialog-err">
+			<h3>Erro no formulario</h3>
+			<p>O formulario não pode ser enviado porque há erro no seu preenchimento, leia com atenção os textos em cada campo para preencher devidamente e fazer o seu cadastro sem complicações</p>
+			<p id="erro">aguardando um texto informativo...</p>
+			<button>OK</button>
+		</dialog>
+</body>
+</html>
