@@ -2,8 +2,8 @@ $(function(){
 	var ctn_cadastro = document.querySelector(".ctn-cadastro");
 	var ctn_login = document.querySelector(".ctn-login");
 	const modalTipoUser = document.querySelector(".modal-inq");
-	var modal = document.querySelector('.modal');
-	const campoErro = document.querySelector('.modal-err #erro');
+	var modal = document.querySelector('.modal-erro');
+	const campoErro = document.querySelector('.modal-erro #erro');
 	const regexText = /^[A-Za-zÀ-ÿ\s]{3,}$/;
 	const regexTextS = /^[A-Za-z0-9\s]+$/;
 	const regexEscola = /^[\w]$/;
@@ -16,14 +16,15 @@ $(function(){
 	document.querySelector(".close").addEventListener("click", function() {
     	modal.style.display = "none";
 	});
-	$(".modal-err button").click(function(e){
+	$(".modal-erro button").click(function(e){
 		modal.style.display = "none";
 	});
 	$(".call-cadastro").click(function(){
 		$(".form-login").fadeOut(1000);
+		document.querySelector("footer").remove();
 		modalTipoUser.style.display = "block";
 	});
-	$(".modal-inq button").click(function(){
+	$(".modal-ctt-inq button").click(function(){
 		if(document.querySelector("input[name='tipoUser']:checked")){
 			tipoUser = document.querySelector("input[name='tipoUser']:checked").value;
 			if(tipoUser == "estudante"){

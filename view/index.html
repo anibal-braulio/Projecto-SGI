@@ -7,7 +7,7 @@
 	<title>Login | FSS</title>
 	<link rel="stylesheet" type="text/css" href="../res/css/formulario.css">
 	<script type="text/javascript" src="../res/js/jquery.js" defer></script>
-	<script type="text/javascript" src="../res/js/cadastro.js" defer></script>
+	<script type="text/javascript" src="../res/js/form.js" defer></script>
 </head>
 <body class="flex-column center">
 	<header>
@@ -18,11 +18,11 @@
 		<form id="formLogin" class="form-login flex-column">
 			<fieldset><legend>Inicie sua Sessão</legend>
 				<label for="emailLogin">seu email ou numero:</label>
-				<input type="text" name="emailLogin" id="emailLogin" placeholder="exemple@gmail.com ou 9XX XXX XXX" min-length="3">
+				<input type="text" name="emailLogin" id="emailLogin" placeholder="exemple@gmail.com" min-length="3">
 				<label for="senhaLogin">sua senha:</label>
 				<input type="password" name="senhaLogin" id="senhaLogin" placeholder="senha1234" maxlength="25">
 				<a class="forgot" href="forgot-pass" id="forgot-pass">esqueceu a senha</a>
-				<input type="submit" name="entrar" id="entrar" value="entrar">
+				<button type="submit" name="entrar" id="entrar">entrar</button>
 				<p>Ainda não tenho uma conta, <a class="call-cadastro" href="#ctn-cadastro">criar conta?</a></p>
 			</fieldset>
 		</form>
@@ -143,19 +143,23 @@
 			<li><a href="sobre-sig">sobre a sistema</a></li>
 		</ul>
 	</footer>
-		<dialog class="dialog-inq">
-			<h2>Que tipo de usuario será: </h2>
-			<input type="radio" name="tipoUser" id="estudante" value="estudante">
-			<label for="estudante">Um Estudante </label><br>
-			<input type="radio" name="tipoUser" id="gestor" value="gestor">
-			<label for="gestor">Um Gestor de Projectos </label>
-			<button name="enviar" id="enviar">OK</button>
-		</dialog>
-		<dialog class="dialog-err">
-			<h3>Erro no formulario</h3>
-			<p>O formulario não pode ser enviado porque há erro no seu preenchimento, leia com atenção os textos em cada campo para preencher devidamente e fazer o seu cadastro sem complicações</p>
-			<p id="erro">aguardando um texto informativo...</p>
-			<button>OK</button>
-		</dialog>
+		<div id="modal" class="modal modal-inq">
+			<div class="modal-ctt-inq">
+				<h2>Que tipo de usuario será: </h2>
+				<input type="radio" name="tipoUser" id="estudante" value="estudante">
+				<label for="estudante">Um Estudante </label><br>
+				<input type="radio" name="tipoUser" id="gestor" value="gestor">
+				<label for="gestor">Um Gestor de Projectos </label>
+				<button name="enviar" id="enviar">OK</button>
+			</div>
+    	</div>
+		
+		<div id="modal" class="modal modal-erro">
+			<div class="modal-content">
+				<span class="close">&times;</span>
+				<h2>Erro no formulario</h2>
+				<p id="erro">aguardando um texto informativo...</p>
+			</div>
+    	</div>
 </body>
 </html>

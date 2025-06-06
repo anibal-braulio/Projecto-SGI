@@ -4,8 +4,9 @@
 @import "modal.css";
 *{margin: 0px; padding: 0px; box-sizing: border-box; font-family: "Georgia";}
 :root{
-	--laranja: #efcc3e;
-	--amarela: #efefef;
+	--orange: #efcc3e;
+	--shadow-orange: rgb(239, 204, 62,0.7); 
+	--white: white;
 }
 a{text-decoration: none ; color: black; cursor: pointer;}
 ul{list-style-type: none;}
